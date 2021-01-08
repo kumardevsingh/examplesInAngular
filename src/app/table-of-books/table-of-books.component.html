@@ -1,0 +1,22 @@
+<p>
+  table-of-books works!
+  <!-- {{errors | json}} -->
+  
+</p>
+
+<select (change)="someProperty=$event.target.value" [value]="someProperty">
+  <optgroup>
+    <option [value]="0">0</option>
+    <option [value]="1">1</option>
+    <option [value]="2">2</option>
+    <option [value]="3">3</option>
+    <option [value]="4">4</option>
+  </optgroup>
+
+</select>
+<hr/>
+{{someProperty}}
+<hr />
+<input [value]="inputValue" (input)="inputValue = $event.target.value" />
+<br/>
+{{inputValue}}
